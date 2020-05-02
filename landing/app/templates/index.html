@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+  <div class="container">
+    <div class="row center">
+
+      <h3>Спасибо, что посетили наш сайт!</h3>
+      <div class="row center">
+        <a href="{% url "index" %}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">
+            Попробуем еще разок?</a>
+        <a href="{% url "stats" %}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">
+            Статистика посещений</a>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
